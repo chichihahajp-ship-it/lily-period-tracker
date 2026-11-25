@@ -16,3 +16,6 @@ Notifications are checked when the app opens; scheduled notifications while clos
 Lily v5 update: adds the approved personal portrait as a small circular image beside the Lily title. The image is stored locally as lily-owner-photo.jpg and cached by the service worker. The daily journal date-specific loading fix from v4 is retained.
 
 Privacy note: if this repository is public, anyone who can access the repository can also access the portrait file. Keep the repository private or remove the portrait before making the project public if that is not intended.
+
+
+Lily v6 update: the personal portrait beside the Lily title is larger (68x68 CSS pixels) and uses a rounded-square frame rather than a circle. This keeps the square portrait visible without circular edge cropping. The date-specific journal fix and local-storage keys are unchanged.
