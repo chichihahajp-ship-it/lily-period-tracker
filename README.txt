@@ -1,23 +1,11 @@
-LILY — Android installable website (PWA)
+LILY — ANDROID PWA v3
 
-This test build starts with sample cycle data: period began 16 November 2026 and ended 20 November 2026; average cycle length 30 days and period duration 5 days. Confirm these dates with your friend and get her permission before entering or keeping her personal cycle information.
+Upload these files to the ROOT of the GitHub repository (replace existing files): index.html, manifest.webmanifest, sw.js, lily-hero.png, icon-192.png, icon-512.png. README.txt is optional.
 
-TO TEST ON ANDROID
-1. Upload the contents of this folder to an HTTPS static host (for example, Netlify, Cloudflare Pages, or GitHub Pages). Keep index.html, manifest.webmanifest, sw.js, and icons/ together.
-2. Open the HTTPS URL in Google Chrome on Android.
-3. Use Chrome menu ⋮ → Install app / Add to Home screen, or tap Install Lily if shown.
-4. Open Lily from the home screen.
+GitHub Pages: Deploy from branch > main > /(root).
 
-FEATURES IN THIS TEST BUILD
-- Cycle calendar, period logging, cycle history, symptom/mood notes, editable cycle settings.
-- Local-only storage in the browser on that device; no account or cloud sync.
-- Export and clear-data controls.
-- Lily’s little care notes and opt-in browser notifications.
+Privacy: No period dates are embedded in this build. Cycle entries are stored in localStorage in each browser/device and are not synced. Do not put personal cycle data in repository files or screenshots. The website source is publicly visible.
 
-NOTIFICATION LIMITATION
-This prototype checks for an upcoming-period reminder when Lily is opened. It does not provide reliable scheduled notifications while the app is closed. True background reminders require a push-notification service and server setup.
+Notifications: Lily can request browser notification permission and check for reminders when opened. It does not guarantee scheduled notifications while closed; that requires a push-notification backend.
 
-PRIVACY & HEALTH
-- Cycle entries and logs remain in local browser storage and are not uploaded by this prototype. Anyone with access to the unlocked phone/browser profile may see them. Clearing Chrome site data may erase them; export a backup if needed.
-- Only enter your friend’s data with her knowledge and permission.
-- Period and ovulation dates are estimates, not contraception or medical advice.
+Predictions are estimates only and must not be used for contraception or diagnosis.
