@@ -13,9 +13,11 @@ The service worker cache was bumped to v4 so installed copies can receive the up
 Notifications are checked when the app opens; scheduled notifications while closed are not guaranteed without a push-notification backend. Predictions are estimates only and must not be used for contraception or diagnosis.
 
 
-Lily v5 update: adds the approved personal portrait as a small circular image beside the Lily title. The image is stored locally as lily-owner-photo.jpg and cached by the service worker. The daily journal date-specific loading fix from v4 is retained.
+Lily v7 update: adds the approved personal portrait as a small circular image beside the Lily title. The image is stored locally as lily-owner-photo.jpg and cached by the service worker. The daily journal date-specific loading fix from v4 is retained.
 
 Privacy note: if this repository is public, anyone who can access the repository can also access the portrait file. Keep the repository private or remove the portrait before making the project public if that is not intended.
 
 
-Lily v6 update: the personal portrait beside the Lily title is larger (68x68 CSS pixels) and uses a rounded-square frame rather than a circle. This keeps the square portrait visible without circular edge cropping. The date-specific journal fix and local-storage keys are unchanged.
+Lily v7 update: the personal portrait beside the Lily title is larger (68x68 CSS pixels) and uses a rounded-square frame rather than a circle. This keeps the square portrait visible without circular edge cropping. The date-specific journal fix and local-storage keys are unchanged.
+
+Lily v7 portrait update: uses the full, uncropped supplied photo in a larger 4:3 frame. The portrait uses object-fit: contain so the whole photo remains visible.
